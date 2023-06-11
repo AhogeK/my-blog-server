@@ -20,10 +20,13 @@ import org.springframework.core.env.Environment;
 class MyBlogServerApplicationTests {
 
     private final OkHttpClient client = new OkHttpClient();
+
     @LocalServerPort
     private int port;
+
     @Autowired
     private Environment env;
+
     private HttpUrl baseUrl;
 
     @BeforeAll
